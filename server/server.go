@@ -86,8 +86,9 @@ func post_action(c echo.Context) error {
 
 	base62_idx := base62.Encode(web_id)
 	_ = redis.Set(base62_idx, url)
+	full_url = "http://short.josephtest.net/" + base62_idx
 
-	data := template_input{true, base62_idx, false}
+	data := template_input{true, full_url, false}
 
 	return c.Render(http.StatusOK, "index", data)
 }
