@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: short-url
-        image: josephshih13/short-url:main
+        image: josephshih13/short-url
         ports:
         - containerPort: 1323
         env:
