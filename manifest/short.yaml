@@ -22,6 +22,7 @@ spec:
         env:
         - name: REDIS_URL
           value: "redis-master:6379"
+        imagePullPolicy: "Always"
 ---
 apiVersion: v1
 kind: Service
