@@ -1,6 +1,9 @@
 # Short URL Generator
 This repository contains the code that you can deploy your own short-url application on your EKS cluster.
 
+![alt text](https://github.com/josephshih13/short-url/blob/main/k8s_cicd_project.png?raw=true)
+
+
 ## Install on EKS
     kubectl apply -f manifest/redis.yaml
     kubectl apply -f manifest/short.yaml
